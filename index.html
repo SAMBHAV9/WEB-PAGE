@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SingUp Form</title>
+    <link rel="stylesheet" href="./index.css">
+    
+</head>
+<body>
+    <div class="SignUp-container">
+        <div class="heading">
+            <h2>Sign up Form</h2>
+        </div>
+        <div class="SignUp-element">
+            <label for="first name">first name</label>
+            <input type="text" placeholder="first name" id="first name">
+        </div>
+        <div class="SignUp-element">
+            <label for="last name">last name</label>
+            <input type="text" placeholder="last name" id="last name">
+        </div>
+        <div class="SignUp-element">
+            <label for="gender">male</label>
+            <input type="radio" name="gender" id="gender" value="male">
+            <label for="gender">female</label>
+            <input type="radio" name="gender" id="gender" value="female"> 
+        </div>
+        <div class="SignUp-element">
+            <label for="email">email</label>
+            <input type="email" placeholder="email" id="email">
+        </div>
+        <div class="SignUp-element">
+            <label for="phone">phone number</label>
+            <input type="number" placeholder="phone number" id="phone number">
+        </div>
+        <div class="button">
+            <input type="button" value="submit" onclick="submitForm()" >
+        </div>
+    </div>
+    <script>
+
+        function submitForm(){
+            const firstName = document.getElementById("first name").value;
+            const lastName = document.getElementById("last name").value;
+            const gender = document.querySelector('input[name="gender"]:checked').value;
+            const email = document.getElementById("email").value;
+            const phone = document.getElementById("phone number").value;
+            
+            console.log("name of the user is "+firstName+"\t"+lastName+"\t and user's gender is \t"+gender+"\t phone number of the user is \t"+phone);
+
+        }
+    </script>
+</body>
+</html>

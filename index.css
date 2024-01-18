@@ -1,0 +1,17 @@
+
+
+.SignUp-container{
+
+    height: 500px;
+    width: 100px;
+    background-color: white;
+    position: flex;
+    
+}
+.heading{
+    position:relative;
+    text-align: justify;
+    height: 120px;
+    width: 120px;
+
+}
